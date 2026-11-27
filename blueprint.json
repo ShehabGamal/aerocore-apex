@@ -1,0 +1,37 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/",
+  "preferredVersions": {
+    "php": "8.2",
+    "wp": "latest"
+  },
+  "steps": [
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "AeroCore Apex — DTC WooCommerce",
+        "blogdescription": "Lossless Planar Magnetic Wireless Headphones"
+      }
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "woocommerce"
+      },
+      "options": {
+        "activate": true
+      }
+    },
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/ShehabGamal/aerocore-apex/main/zips/aerocore-apex-theme.zip"
+      },
+      "options": {
+        "activate": true
+      }
+    }
+  ]
+}
