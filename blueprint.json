@@ -26,11 +26,14 @@
     {
       "step": "installTheme",
       "themeData": {
-        "resource": "url",
-        "url": "https://raw.githubusercontent.com/ShehabGamal/aerocore-apex/main/zips/aerocore-apex-theme.zip"
+        "resource": "git:directory",
+        "url": "https://github.com/ShehabGamal/aerocore-apex",
+        "ref": "HEAD",
+        "path": "wp-content/themes/aerocore-apex"
       },
       "options": {
-        "activate": true
+        "activate": true,
+        "targetFolderName": "aerocore-apex"
       }
     }
   ]
